@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrap {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 50px;
+    margin: 0 auto;
+}
+
+header {
+    background: #FD9727;
+    min-height: 75px;
+}
+
+h1,
+h2,
+p {
+    padding: 15px;
+}
+
+.london,
+.paris,
+.tokyo {
+    width: 33%;
+    float: left;
+}
+
+.london img,
+.paris img,
+.tokyo img {
+    display: block;
+    max-width: 80%;
+    margin: 5px auto;
+}
+
+@media screen and (max-width: 1600px) {
+    img {
+        width: 50%;
+        padding: 2%;
+        float: left;
+    }
+    .london,
+    .paris,
+    .tokyo {
+        min-height: 390px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    img {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .london,
+    .paris,
+    .tokyo {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+}
